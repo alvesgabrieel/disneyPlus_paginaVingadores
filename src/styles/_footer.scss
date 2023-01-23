@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.footer {
+    padding: 26px 8px 0px 8px;
+    &__container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__logo{
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+     &__links{
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 550px;
+        margin-left: 240px;
+        &__item{
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                padding: 8px 16px;
+                display: block;
+                color: variaveis.$textColorAlternative;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+      p {
+        color: variaveis.$textColorAlternative;
+        letter-spacing: -.1px;
+        line-height: 1.5;
+        width: 440px;
+        margin-left: 300px;
+        margin-bottom: 8px;
+
+        &:last-child{
+            margin-bottom: 20px;
+        }
+    }
+}
