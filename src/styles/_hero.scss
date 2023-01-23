@@ -1,0 +1,103 @@
+@use 'variaveis';
+
+.hero {
+        margin-top: 128px;
+        margin-left: 90px;
+        position: absolute;
+        top: 0;
+
+        &__logo{
+        max-width: 341px;
+        min-width: 100px;
+        width: 35vw;
+        padding-bottom: 16px;
+        }
+
+        &__title {
+            margin: 16px 0 8px;
+            color: variaveis.$textImaxColor;
+        }
+
+        &__saiba-mais {
+            padding-top: 8px;
+            padding-bottom: 16px;
+            
+            a{
+                text-decoration: none;
+                color: variaveis.$linkColor;
+            }
+        }
+
+        &__infos{
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            img{
+            height: 20px; 
+            margin-right: 4px;
+            }
+        }
+
+        &__buttons{
+            margin-top: 30px;
+            display: flex;
+
+            &__btn-play{
+                display: flex;
+                color: #000;
+
+                img{
+                    margin-right: 16px;
+                    width: 20px;
+                }
+            }             
+
+            button {
+                margin-right: 30px;
+                cursor: pointer;
+                height: 56px;
+                width: auto;
+                background-color: variaveis.$textColor;
+                color: variaveis.$corDeFundo;
+                padding: 0 24px;
+                border-radius: 0.25rem;
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 1.6;
+                text-transform: uppercase;
+                border: 1px solid transparent;
+                align-items: center;   
+
+
+                &:hover {
+                    background-color: darken(variaveis.$textColor, 17%);
+                }
+            
+
+                &:nth-child(2){
+                    background-color: variaveis.$corDeFundo;
+                    color: variaveis.$textColor;
+                    border: 1px solid variaveis.$textColor;
+
+                    &:hover{
+                        background-color: variaveis.$textColor;
+                        color: variaveis.$corDeFundo;
+                        transition: all .2s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        &__sinopse{
+            width: 874px;
+            height: 160px;
+            padding: 16px 0;
+            letter-spacing: -.1px;
+            line-height: 1.6;
+        }
+    }
+
+
+    
+
