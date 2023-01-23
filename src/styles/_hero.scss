@@ -32,9 +32,14 @@
             display: flex;
             align-items: center;
             margin-bottom: 8px;
+
             img{
             height: 20px; 
             margin-right: 4px;
+            }
+
+            span {
+                color: variaveis.$textColor;
             }
         }
 
