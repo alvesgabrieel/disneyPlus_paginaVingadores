@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.menu {
+    position: absolute;
+    top: 770px;
+    left: 90px;
+
+    &__list{
+        display: flex;
+        border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+        
+        &__item{
+            margin-right: 40px;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            color: variaveis.$textColorAlternative;
+
+            &:nth-child(4){
+                padding-right: 1080px;
+            }
+            
+            &--is-active{
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+}

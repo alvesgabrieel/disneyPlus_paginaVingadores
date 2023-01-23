@@ -1,5 +1,6 @@
 @use 'variaveis';
 @use 'hero';
+@use 'menu';
 
 @font-face {
     font-family: Avenir;
@@ -18,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
-    color: #fff;
+    list-style: none;
 }
 
 body {
@@ -30,7 +31,6 @@ body {
 .bg {
     width: 100vw;
     opacity: .7;
-    
 }
 
 @mixin title($fontSize: 22px){
@@ -40,7 +40,6 @@ body {
 
 @mixin text($fontSize: 20px) {
     font-size: $fontSize;
-    color: variaveis.$textColor;
 }
 
 .title{
