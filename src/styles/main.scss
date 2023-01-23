@@ -24,11 +24,13 @@
 body {
     background-color: variaveis.$corDeFundo;
     position: relative;
+    overflow-x: hidden;
 }
 
 .bg {
     width: 100vw;
     opacity: .7;
+    
 }
 
 @mixin title($fontSize: 22px){
