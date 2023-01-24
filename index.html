@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/img/disneyplus.svg" alt="Disney+">
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__list__item">inicio</li>
+                    <li class="header__nav__list__item">pesquisa</li>
+                    <li class="header__nav__list__item">minha lista</li>
+                    <li class="header__nav__list__item">originais</li>
+                    <li class="header__nav__list__item">filmes</li>
+                    <li class="header__nav__list__item">séries</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <picture>
         <img class="bg" src="./dist/img/vin-bg.jfif" alt="Vingadores - Ultimato">
     </picture>
@@ -47,55 +64,55 @@
        </nav>
     </section>
     <section class="collections">
-        <div class="collection">
+        <div class="collection" data-carousel="colllection">
             <div class="btn-carousel">
-                <a href="" class="btn-carousel--left">
+                <a href="" class="btn-carousel--left" data-carousel="btn-previous">
                     <img src="./dist/img/btn-img/left.png" alt="left">
                 </a>
-                <a href="" class="btn-carousel--right">
+                <a href="" class="btn-carousel--right" data-carousel="btn-next">
                     <img src="./dist/img/btn-img/right.png" alt="right">
                 </a>
             </div>
             <div class="movie-carousel">
-                <ul class="movie-carousel__list">
-                    <li class="movie-carousel__item">
+                <ul class="movie-carousel__list" data-carousel="list">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/shes hulk.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/shes hulk.jfif" alt="shes hulk" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/vingadores1.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/vingadores1.jfif" alt="vingadores" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/vin2.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/vin2.jfif" alt="vingadores era de ultron" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/guerra_civil.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/guerra_civil.jfif" alt="capitão américa guerra civil" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/guerra_inifnita.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/guerra_inifnita.jfif" alt="vingadores guerra infinita" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/guerra_inifnita.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/homem_de_ferro.jfif" alt="homem de ferro" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/guerra_inifnita.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/pantera_negra.jfif" alt="pantera negra" class="movie-carousel__cover">
                         </a>
                     </li>
-                    <li class="movie-carousel__item">
+                    <li class="movie-carousel__item" data-carousel="item">
                         <a href="#" class="movie-carousel__link">
-                            <img src="./dist/img/carousel/guerra_inifnita.jfif" alt="" class="movie-carousel__cover">
+                            <img src="./dist/img/carousel/capita_marvel.jfif" alt="capita marvel" class="movie-carousel__cover">
                         </a>
                     </li>
                 </ul>
@@ -107,25 +124,25 @@
             <img class="footer__logo" src="./dist/img/disneyplus.svg" alt="Disney+">
             <ul class="footer__links">
                 <li class="footer__links__item">
-                    <a class="text--small" href="#">Termos e condição de uso</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Política de privacidade</a>
+                    <a class="text--small" href="#">Política de Privacidade</a>
                 </li>
                 <li class="footer__links__item">
                     <a class="text--small" href="#">Proteção de Dados no Brasil</a>
                 </li>
                 <li class="footer__links__item">
-                    <a class="text--small" href="#">Anúncios personalizados</a>
-                </li>
-                <li class="footer__links__item">
-                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                    <a class="text--small" href="#">Contrato de Assinatura</a>
                 </li>
                 <li class="footer__links__item">
                     <a class="text--small" href="#">Ajuda</a>
                 </li>
                 <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
                     <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
                 </li>
             </ul>
             <p class="text--small">
@@ -134,5 +151,6 @@
             <p class="text--small">© Disney. Todos os direitos reservados.</p>
             </div>
     </footer>
+    <script src="./dist/scripts/main.js"></script>
 </body>    
 </html>

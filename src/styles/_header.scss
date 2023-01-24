@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.header{
+    position: sticky;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+    &__container{
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__logo {
+        margin: 5px;
+        max-width: 80px;
+        width: 100%;
+        transition: opacity .5s ease;
+    }
+
+    &__nav{
+        margin-top: 4px;
+        
+        &__list{
+            display: flex;
+            align-items: center;
+            
+            &__item{
+                padding: 16px 18px;
+                color: white;
+                cursor: pointer;
+                text-transform: uppercase;
+                margin-left: 35px;
+            }
+        }
+    }
+
+}
