@@ -7,13 +7,13 @@
 
 @font-face {
     font-family: Avenir;
-    src: url(../..assets/fonts/Avenir-Regular.woff2);
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url(../..assets/fonts/Avenir-Bold.woff2);
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
 }
 
@@ -21,11 +21,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif;
     list-style: none;
 }
 
 body {
+    font-family: Avenir, sans-serif;
     background-color: variaveis.$corDeFundo;
     position: relative;
     overflow-x: hidden;
