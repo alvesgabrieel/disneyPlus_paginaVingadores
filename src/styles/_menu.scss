@@ -14,9 +14,10 @@
             padding-bottom: 15px;
             text-transform: uppercase;
             color: variaveis.$textColorAlternative;
+            cursor: pointer;
 
             &:nth-child(4){
-                padding-right: 1160px;
+                padding-right: 1187px;
             }
             
             &--is-active{

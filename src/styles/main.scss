@@ -36,6 +36,12 @@ body {
     opacity: .7;
 }
 
+@mixin fontHeader($fontSize: 13px){
+    font-size: $fontSize;
+    color: variaveis.$textColor;
+    font-weight: bold;
+}
+
 @mixin title($fontSize: 22px){
     font-size: $fontSize;
     color: variaveis.$textImaxColor;
@@ -55,5 +61,9 @@ body {
 
 .text--small {
     @include text(12px);
+}
+
+.text--headerLink {
+    @include fontHeader()
 }
 

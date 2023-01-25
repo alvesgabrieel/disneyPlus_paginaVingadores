@@ -29,12 +29,25 @@
             display: flex;
             align-items: center;
             
-            &__item{
-                padding: 16px 18px;
-                color: white;
+            &__containerItem{
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
                 cursor: pointer;
+            }
+
+            &__icon {
+                height: 14px;
+                width: 12px;
+                margin-right: 13px;
+            }
+
+            &__item{
+                padding: 16px 0;
+                color: white;
                 text-transform: uppercase;
-                margin-left: 35px;
+                letter-spacing: 1.42px;
+                line-height: 1.07;
             }
         }
     }
