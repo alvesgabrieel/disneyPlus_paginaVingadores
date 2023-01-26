@@ -4,6 +4,12 @@
     position: absolute;
     top: 828px;
     left: 0;
+
+    @media (max-width: 768px) {
+        margin-top: 140px;
+        left: 330px;
+        width: 2000px;
+    }
 }
 
 .btn-carousel{

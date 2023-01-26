@@ -5,9 +5,17 @@
     top: 770px;
     left: 90px;
 
+    @media (max-width: 768px) {
+        left: 25px;
+    }
+
     &__list{
         display: flex;
         border-bottom: 2px solid rgba(249, 249, 249, 0.2);
+
+        @media (max-width: 768px) {
+            margin-top: 120px;
+        }
         
         &__item{
             margin-right: 40px;

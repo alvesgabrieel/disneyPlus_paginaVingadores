@@ -5,6 +5,11 @@
         top: 128px;
         left: 90px;
 
+        @media (max-width: 768px) {
+            left: 30px;
+            top: 140px;
+        }
+
         &__logo{
         max-width: 341px;
         min-width: 100px;
@@ -15,6 +20,11 @@
         &__title {
             margin: 16px 0 8px;
             color: variaveis.$textImaxColor;
+
+            @media (max-width: 768px) {
+                margin: 16px 0 8px 0;
+                width: 234px;
+            }
         }
 
         &__saiba-mais {
@@ -109,6 +119,10 @@
                 &:hover {
                     background-color: darken(variaveis.$textColorAlternative, 60%);
                 }
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
 
             #addList{
@@ -127,7 +141,6 @@
             #groupWatch{
                 @include btn;
                 
-
                 .imgContainer{
                     display: flex;
                     justify-content: center;
@@ -149,6 +162,11 @@
 
             p{
                 color: variaveis.$textColor;
+            }
+
+            @media (max-width: 768px) {
+                width: 300px;
+                height: 384px;
             }
         }
     }

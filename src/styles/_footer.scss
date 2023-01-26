@@ -7,6 +7,10 @@
         width: 100%;
         margin: 0 auto;
         text-align: center;
+
+        @media (max-width: 768px) {
+            margin-top: 920px;
+        }
     }
 
     &__logo{
@@ -22,6 +26,12 @@
         justify-content: center;
         width: 550px;
         margin-left: 240px;
+
+        @media (max-width: 768px) {
+            margin-left: 20px;
+            width: 319px;
+        }
+
         &__item{
             display: inline-block;
 
@@ -48,6 +58,11 @@
 
         &:last-child{
             margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 20px;
+            width: 319px;
         }
     }
 }

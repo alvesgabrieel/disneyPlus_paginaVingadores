@@ -9,10 +9,19 @@
     transition: background-color .5s ease;
     z-index: 1;
 
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+
     &__container{
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            width: 375px;
+            height: 72px;
+        }
     }
     
     &__logo {
@@ -20,6 +29,11 @@
         max-width: 80px;
         width: 100%;
         transition: opacity .5s ease;
+
+        @media (max-width: 768px) {
+            width: 60px;
+            margin-left: -10px;
+        }
     }
 
     &__nav{
@@ -28,18 +42,43 @@
         &__list{
             display: flex;
             align-items: center;
+
+            @media (max-width: 768px) {
+                margin-right: 100px;
+            }
             
             &__containerItem{
                 display: flex;
                 align-items: center;
                 margin-left: 50px;
                 cursor: pointer;
+
+                @media (max-width: 768px) {
+                    margin-top: 10px;
+                    
+                    &:nth-child(4){
+                        display: none;
+                    } &:nth-child(5){
+                        display: none;
+                    } &:nth-child(6){
+                        display: none;
+                    } &:nth-child(7){
+                        display: none;
+                    }
+                }
+                
             }
 
             &__icon {
                 height: 14px;
                 width: 12px;
                 margin-right: 13px;
+
+                @media (max-width: 768px) {
+                    margin-top: 10px;
+                    margin-left: -14px;
+                    width: 15px;
+                }
             }
 
             &__item{
@@ -48,6 +87,10 @@
                 text-transform: uppercase;
                 letter-spacing: 1.42px;
                 line-height: 1.07;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
         }
     }
@@ -72,4 +115,13 @@
         margin-left: 16px;
     }
 
+    @media (max-width: 768px) {
+        position: absolute;
+        left: 294px;
+        top: 14px;
+
+        p{
+            display: none;
+        }
+    }
 }
