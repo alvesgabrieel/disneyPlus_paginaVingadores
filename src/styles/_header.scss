@@ -53,3 +53,23 @@
     }
 
 }
+
+#profile {
+    position: relative;
+    left: 780px;
+    top: 4px;
+    display: flex;
+
+    p {
+        color: variaveis.$textColor;
+        margin-top: 12px;
+        font-size: 15px;        
+    }
+
+    img{
+        width: 48px;   
+        height: 48px;
+        margin-left: 16px;
+    }
+
+}
