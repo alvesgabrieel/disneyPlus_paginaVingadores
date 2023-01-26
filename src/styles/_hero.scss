@@ -96,6 +96,48 @@
                     }
                 }
             }
+
+
+            @mixin btn(){
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                padding: 20px;
+                background-color: variaveis.$corDeFundo;
+                border: 2px solid variaveis.$textColor;
+
+                &:hover {
+                    background-color: darken(variaveis.$textColorAlternative, 60%);
+                }
+            }
+
+            #addList{
+                @include btn;
+
+                .imgContainer{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: -22px;
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+
+            #groupWatch{
+                @include btn;
+                
+
+                .imgContainer{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: -12px;
+                    img{
+                        width: 30px;
+                    }
+                }
+                
+            }
         }
 
         &__sinopse{
