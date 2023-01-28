@@ -16,6 +16,11 @@
     &__logo{
         width: 80px;
         margin: 0 auto 10px;
+
+        @media (max-width: 768px) {
+            margin-left: 15px;
+        }
+
     }
 
      &__links{
@@ -28,7 +33,7 @@
         margin-left: 240px;
 
         @media (max-width: 768px) {
-            margin-left: 20px;
+            margin-left: 28px;
             width: 319px;
         }
 
@@ -61,7 +66,7 @@
         }
 
         @media (max-width: 768px) {
-            margin-left: 20px;
+            margin-left: 25px;
             width: 319px;
         }
     }
